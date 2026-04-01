@@ -1,0 +1,263 @@
+/* ── Searchable Select Widget (account pages) ─────────── */
+.ss-wrapper { position: relative; width: 100%; }
+.ss-trigger {
+  width: 100%; display: flex; align-items: center; justify-content: space-between;
+  background: #fffdf1; border: 1px solid #ddd; border-radius: 8px;
+  padding: 10px 14px; font-size: 14px; font-family: inherit; color: #2c4b2c;
+  cursor: pointer; transition: border-color .2s, box-shadow .2s; direction: rtl;
+}
+.ss-trigger:hover { border-color: #2c4b2c; }
+.ss-trigger[aria-expanded="true"] { border-color: #2c4b2c; box-shadow: 0 0 0 3px rgba(44,75,44,.12); }
+.ss-trigger.ss-disabled { opacity: .55; cursor: not-allowed; }
+.ss-trigger-text { flex: 1; text-align: right; }
+.ss-placeholder { color: #aaa; }
+.ss-arrow { margin-right: 8px; font-size: 12px; transition: transform .2s; }
+.ss-trigger[aria-expanded="true"] .ss-arrow { transform: rotate(180deg); }
+.ss-panel {
+  display: none; position: absolute; top: calc(100% + 4px); right: 0; left: 0;
+  background: #fff; border: 1px solid #ddd; border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.12); z-index: 9999; overflow: hidden;
+  animation: ssFadeIn .15s ease;
+}
+.ss-panel.open { display: block; }
+@keyframes ssFadeIn { from { opacity:0; transform: translateY(-6px); } to { opacity:1; transform: translateY(0); } }
+.ss-search-wrap { padding: 10px; border-bottom: 1px solid #f0ead4; }
+.ss-search {
+  width: 100%; border: 1px solid #ddd; border-radius: 6px; padding: 7px 10px;
+  font-size: 13px; font-family: inherit; direction: rtl; outline: none;
+  background: #fffdf1; color: #2c4b2c;
+}
+.ss-search:focus { border-color: #2c4b2c; }
+.ss-list { list-style: none; margin: 0; padding: 6px 0; max-height: 180px; overflow-y: auto; }
+.ss-option {
+  padding: 9px 16px; font-size: 14px; cursor: pointer; direction: rtl;
+  transition: background .15s; color: #2c4b2c;
+}
+.ss-option:hover, .ss-option.selected { background: #f0f7f3; color: #1a3a1a; }
+.ss-option.selected { font-weight: 600; }
+.ss-empty { padding: 10px 16px; font-size: 13px; color: #aaa; direction: rtl; }
+.gov-city-row {
+  display: flex; gap: 10px; direction: rtl;
+}
+.gov-city-row .ss-wrapper { flex: 1; }
+/* ── end Searchable Select ────────────────────────────── */
+
+.account {
+  width: 60%;
+  margin: 0 auto;
+  text-align: right;
+  margin-top: -1px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #2c4b2c;
+  padding: 35px;
+}
+
+.account h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background: #f8f5da;
+  border-radius: 25px;
+  padding: 45px;
+}
+
+.container-info-input {
+  display: flex;
+  gap: 30px;
+}
+
+.container-info-input .email,
+.container-info-input .phone {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.container-info-input .email label,
+.container-info-input .phone label {
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.container-info-input .email input,
+.container-info-input .phone input {
+  background-color: #fffdf1;
+  border: 1px solid #2c4b2c;
+  padding: 12px 35px;
+  border-radius: 10px;
+  color: #2c4b2c;
+  font-size: 16px;
+  width: 100%;
+}
+
+.box-input {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.btn-update-account {
+  background: #f8f5da;
+  border: 1px solid #2c4b2c;
+  padding: 10px 30px;
+  border-radius: 6px;
+  transition: 0.15s ease;
+  cursor: pointer;
+  align-self: flex-end;
+  font-size: 16px;
+  color: #2c4b2c;
+}
+
+.btn-update-account:hover {
+  background: #e6e1c1;
+}
+
+/* ===== Role themes: My Account ===== */
+.account.role-ceo .contact-info {
+  background: #f6edd6;
+  border: 1px solid #e4c37a;
+}
+
+.account.role-ceo .contact-info h2,
+.account.role-ceo .container-info-input .email label,
+.account.role-ceo .container-info-input .phone label {
+  color: #7a5a1d;
+}
+
+.account.role-ceo .container-info-input .email input,
+.account.role-ceo .container-info-input .phone input {
+  border-color: #b8860b;
+  background: #fff5df;
+  color: #7a5a1d;
+}
+
+.account.role-ceo .btn-update-account {
+  background: #fff5df;
+  border-color: #b8860b;
+  color: #7a5a1d;
+}
+
+.account.role-ceo .btn-update-account:hover {
+  background: #f7e7c1;
+}
+
+.account.role-manager .contact-info {
+  background: #f5dfdf;
+  border: 1px solid #efb3b3;
+}
+
+.account.role-manager .contact-info h2,
+.account.role-manager .container-info-input .email label,
+.account.role-manager .container-info-input .phone label {
+  color: #7f1d1d;
+}
+
+.account.role-manager .container-info-input .email input,
+.account.role-manager .container-info-input .phone input {
+  border-color: #b91c1c;
+  background: #ffecec;
+  color: #7f1d1d;
+}
+
+.account.role-manager .btn-update-account {
+  background: #ffecec;
+  border-color: #b91c1c;
+  color: #7f1d1d;
+}
+
+.account.role-manager .btn-update-account:hover {
+  background: #ffdede;
+}
+
+.account.role-trader .contact-info {
+  background: #e0ead1;
+  border: 1px solid #92b57e;
+}
+
+.account.role-trader .contact-info h2,
+.account.role-trader .container-info-input .email label,
+.account.role-trader .container-info-input .phone label {
+  color: #2c4b2c;
+}
+
+.account.role-trader .container-info-input .email input,
+.account.role-trader .container-info-input .phone input {
+  border-color: #2c4b2c;
+  background: #f2f7ea;
+  color: #2c4b2c;
+}
+
+.account.role-trader .btn-update-account {
+  background: #e8f0dd;
+  border-color: #2c4b2c;
+  color: #2c4b2c;
+}
+
+.account.role-trader .btn-update-account:hover {
+  background: #dbe8ca;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .account {
+    width: 85%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .account {
+    width: 95%;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .account h2 {
+    font-size: 28px;
+  }
+
+  .contact-info {
+    padding: 25px 20px;
+    gap: 25px;
+  }
+
+  .container-info-input {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Personal info inputs in row-reverse */
+  .container-info-input .email[style*="flex-direction: row-reverse"] {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .btn-update-account {
+    width: 100%;
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .account h2 {
+    font-size: 24px;
+  }
+
+  .container-info-input .email label,
+  .container-info-input .phone label {
+    font-size: 16px;
+  }
+
+  .container-info-input .email input,
+  .container-info-input .phone input {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

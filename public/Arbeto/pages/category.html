@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arbeto</title>
+    <link rel="icon" type="image/x-icon" href="../images\favicoon.png" />
+
+    <!-- ملف الاستايل الاساسي -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <!-- مكتية الشعارات bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="top">
+        <a href="/" class="logo">
+          <img src="../images/logo green.png" alt="" />
+        </a>
+        <!-- الناف بار -->
+        <nav>
+          <ul class="top-bar">
+            <li>
+              <i
+                style="color: #2c4b2c; margin: 0 3px 0 -5px"
+                class="bi bi-gift"
+              ></i>
+              <a href="../Create-your-gift-box.html">صمم هديتك</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="search" style="width: 50%">
+          <input type="search" placeholder="إبحث للوصول للمنتجات" />
+          <span style="right: 3%" class="bi bi-search"></span>
+        </section>
+        <nav>
+          <ul class="top-bar icon">
+            <li class="nun user-menu-container">
+              <a href="#" class="bi bi-person" id="userIcon"></a>
+              <div class="user-dropdown-menu" id="userDropdown">
+                <div class="user-info">
+                  <p class="user-name">إسلام البيطار</p>
+                </div>
+                <hr />
+                <ul class="dropdown-links">
+                  <li>
+                    <a href="my-orders.html"
+                      ><i class="bi bi-bag-check"></i> الطلبات</a
+                    >
+                  </li>
+                  <li>
+                    <a href="my-address.html"
+                      ><i class="bi bi-map"></i> العناوين</a
+                    >
+                  </li>
+                  <li>
+                    <a><i class="bi bi-cash"></i>الرصيد: 500.00</a>
+                  </li>
+                  <li>
+                    <a href="my-account.html"
+                      ><i class="bi bi-person-gear"></i> الحساب</a
+                    >
+                  </li>
+                  <li>
+                    <a href="login.html" class="logout-btn">
+                      <i class="bi bi-box-arrow-right"></i> تسجيل الخروج
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="nun"
+              style="font-size: 20px; display: flex; align-items: center"
+            >
+              <a href="my-favorite.html" class="bi bi-heart-fill bag-order">
+              </a>
+            </li>
+            <li class="nun">
+              <a href="my-bags.html" class="bi bi-bag-fill bag-order">
+                <span class="quntity">3</span>
+              </a>
+            </li>
+
+            <!-- <li><a href="about.html">حول</a></li> -->
+          </ul>
+        </nav>
+        <!-- /الناف بار -->
+      </section>
+      <nav class="category-topbar">
+        <ul class="add-cart">
+          <a
+            class="add"
+            style="font-size: 15px; padding: 5px 30px"
+            href="category.html"
+            ><li>اكسسوارات</li></a
+          >
+          <a
+            class="add"
+            style="font-size: 15px; padding: 5px 30px"
+            href="category.html"
+            ><li>شنطة</li></a
+          >
+          <a
+            class="add"
+            style="font-size: 15px; padding: 5px 30px"
+            href="category.html"
+            ><li>طرحة</li></a
+          >
+          <a
+            class="add"
+            style="font-size: 15px; padding: 5px 30px"
+            href="category.html"
+            ><li>ماج</li></a
+          >
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- أحدث المنتجات -->
+      <section class="last-product" style="margin-top: 0">
+        <h3 style="font-size: 35px">الاكسسوارات</h3>
+
+        <div class="container-product">
+          <!-- المنتج -->
+          <div class="card-product">
+            <a href="item.html" class="card-img">
+              <img src="../images/bag-product.jpg" alt="" />
+            </a>
+            <a href="item.html" class="title">
+              شنطة نسائية من الجلد الطبيعي باللونين الاسود والبني
+            </a>
+
+            <div class="cont-star">
+              <div class="star">
+                <span>(8)</span>
+                <span>4.5</span>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+
+            <div class="price">
+              <!-- <div>
+                <span class="discount">20%</span>
+                <span class="last-price">جنية 399</span>
+              </div> -->
+              <span class="now-price">جنية 239</span>
+            </div>
+
+            <a href="../Create-your-gift-box.html" class="text-box-page">
+              "متاحة للشراء ضمن بوكسات أربيتو بسعر أوفر"
+            </a>
+
+            <div class="text-qountity">متبقي ( 10 ) قطع فقط</div>
+
+            <div class="add-cart">
+              <div class="btns">
+                <button class="share"><i class="bi bi-share"></i></button>
+                <button class="favorite"><i class="bi bi-heart"></i></button>
+              </div>
+              <button class="add">أضف للحقيبة</button>
+            </div>
+          </div>
+          <!-- المنتج -->
+          <div class="card-product">
+            <a href="item.html" class="card-img">
+              <img src="../images/bag-product.jpg" alt="" />
+            </a>
+            <a href="item.html" class="title">
+              شنطة نسائية من الجلد الطبيعي باللونين الاسود والبني
+            </a>
+
+            <div class="cont-star">
+              <div class="star">
+                <span>(8)</span>
+                <span>4.5</span>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+
+            <div class="price">
+              <!-- <div>
+                <span class="discount">20%</span>
+                <span class="last-price">جنية 399</span>
+              </div> -->
+              <span class="now-price">جنية 239</span>
+            </div>
+
+            <a href="../Create-your-gift-box.html" class="text-box-page">
+              "متاحة للشراء ضمن بوكسات أربيتو بسعر أوفر"
+            </a>
+
+            <div class="text-qountity">متبقي ( 10 ) قطع فقط</div>
+
+            <div class="add-cart">
+              <div class="btns">
+                <button class="share"><i class="bi bi-share"></i></button>
+                <button class="favorite"><i class="bi bi-heart"></i></button>
+              </div>
+              <button class="add">أضف للحقيبة</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <div class="up"><span class="bi bi-arrow-up-short"></span></div>
+
+    <footer>
+      <section class="contact-footer">
+        <!-- الايميل -->
+        <a href="mailto:manger@arbeto.net" class="card-footer">
+          <span class="bi bi-envelope-fill"></span>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 6px;
+            "
+          >
+            <label for="">الدعم عبر البريد الإلكتروني</label>
+            <p>manger@arbeto.net</p>
+          </div>
+        </a>
+        <!-- الهاتف -->
+        <a href="tel:+201557460241" class="card-footer">
+          <span class="bi bi-telephone-fill"></span>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 6px;
+            "
+          >
+            <label for="">الدعم عبر الهاتف</label>
+            <p>+201557460241</p>
+          </div>
+        </a>
+      </section>
+
+      <section class="category-footer">
+        <ul>
+          <a href=""><li>اكسسوارات</li></a>
+          <a href=""><li>شنطة</li></a>
+          <a href=""><li>طرحة</li></a>
+          <a href=""><li>ماج</li></a>
+        </ul>
+        <div class="social-footer">
+          <a href="" class="bi bi-facebook"></a>
+          <a href="" class="bi bi-whatsapp"></a>
+          <a href="" class="bi bi-instagram"></a>
+          <a href="" class="bi bi-tiktok"></a>
+        </div>
+      </section>
+
+      <section class="line-footer">
+        <span>جميع الحقوق محفوظة .Arbeto 2026©</span>
+        <a href="about.html"> Arbeto حول</a>
+      </section>
+    </footer>
+    <!-- JavaScript البحث -->
+    <script src="../js/header.js"></script>
+    <!-- JavaScript المنتجات -->
+    <script src="../js/product-interactions.js"></script>
+  </body>
+</html>

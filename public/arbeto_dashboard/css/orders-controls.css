@@ -1,0 +1,140 @@
+/* ===== Orders Header & Controls ===== */
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 15px;
+  flex-direction: row-reverse;
+}
+
+.orders-controls {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-box i {
+  position: absolute;
+  right: 12px;
+  color: #596d52;
+  font-size: 16px;
+}
+
+.search-box input {
+  padding: 10px 40px 10px 15px;
+  border: 2px solid #e0ead1;
+  border-radius: 8px;
+  font-size: 14px;
+  min-width: 250px;
+  transition: all 0.3s ease;
+  direction: rtl;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #779e63;
+  box-shadow: 0 0 0 3px rgba(119, 158, 99, 0.1);
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+  flex-direction: row-reverse;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  background: white;
+  color: #2c4b2c;
+  border: 2px solid #e0ead1;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: #f9efe3;
+  border-color: #779e63;
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #2c4b2c 0%, #1e3a1e 100%);
+  color: white;
+  border-color: #2c4b2c;
+}
+
+/* ===== Reset Cost Button ===== */
+.btn-reset-cost {
+  background: #ff9800;
+  color: white;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.btn-reset-cost:hover {
+  background: #f57c00;
+  transform: scale(1.1);
+}
+
+.stauts-txt {
+  background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%);
+  color: white;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .orders-header {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+  }
+
+  .orders-controls {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .search-box input {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .filter-buttons {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .filter-btn {
+    flex: 1;
+    text-align: center;
+  }
+}

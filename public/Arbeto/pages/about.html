@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arbeto</title>
+    <link rel="icon" type="image/x-icon" href="../images\favicoon.png" />
+
+    <!-- ملف الاستايل الاساسي -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/create-gift.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <!-- مكتية الشعارات bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+ <header>
+      <section class="top">
+        <a href="/" class="logo">
+          <img src="../images/logo green.png" alt="" />
+        </a>
+        <!-- الناف بار -->
+        <nav>
+          <ul class="top-bar">
+            <li>
+              <i
+                style="color: #2c4b2c; margin: 0 3px 0 -5px"
+                class="bi bi-gift"
+              ></i>
+              <a href="../Create-your-gift-box.html">صمم هديتك</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="search" style="width: 50%">
+          <input type="search" placeholder="إبحث للوصول للمنتجات" />
+          <span style="right: 3%" class="bi bi-search"></span>
+        </section>
+        <nav>
+          <ul class="top-bar icon">
+            <li class="nun user-menu-container">
+              <a href="#" class="bi bi-person" id="userIcon"></a>
+              <div class="user-dropdown-menu" id="userDropdown">
+                <div class="user-info">
+                  <p class="user-name">إسلام البيطار</p>
+                </div>
+                <hr />
+                <ul class="dropdown-links">
+                  <li>
+                    <a href="my-orders.html"
+                      ><i class="bi bi-bag-check"></i> الطلبات</a
+                    >
+                  </li>
+                  <li>
+                    <a href="my-address.html"
+                      ><i class="bi bi-map"></i> العناوين</a
+                    >
+                  </li>
+                  <li>
+                    <a><i class="bi bi-cash"></i>الرصيد: 500.00</a>
+                  </li>
+                  <li>
+                    <a href="my-account.html"
+                      ><i class="bi bi-person-gear"></i> الحساب</a
+                    >
+                  </li>
+                  <li>
+                    <a href="login.html" class="logout-btn">
+                      <i class="bi bi-box-arrow-right"></i> تسجيل الخروج
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="nun"
+              style="
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                 
+              "
+            >
+              <a href="my-favorite.html" class="bi bi-heart-fill bag-order">
+              </a>
+            </li>
+            <li class="nun">
+              <a href="my-bags.html" class="bi bi-bag-fill bag-order">
+                <span class="quntity">3</span>
+              </a>
+            </li>
+
+            <!-- <li><a href="about.html">حول</a></li> -->
+          </ul>
+        </nav>
+        <!-- /الناف بار -->
+      </section>
+      <nav class="category-topbar">
+        <ul class="add-cart">
+          <a
+            class="add"
+            style="font-size: 15px; padding: 5px 30px"
+            href="category.html"
+            ><li>اكسسوارات</li></a
+          >
+          <a
+            class="add"
+            style="font-size: 15px; padding: 5px 30px"
+            href="category.html"
+            ><li>شنطة</li></a
+          >
+          <a
+            class="add"
+            style="font-size: 15px; padding: 5px 30px"
+            href="category.html"
+            ><li>طرحة</li></a
+          >
+          <a
+            class="add"
+            style="font-size: 15px; padding: 5px 30px"
+            href="category.html"
+            ><li>ماج</li></a
+          >
+        </ul>
+      </nav>
+    </header>
+
+    <main class="about">
+      <!-- Section 1: Intro -->
+      <section class="about-section">
+        <div class="container-about animate-fade-up">
+          <h2>مـن نـحـن</h2>
+          <p>
+            أهلاً بكم في <strong>Arbeto</strong>، حيث يلتقي الشغف بالإتقان. بدأت
+            رحلتنا من فكرة بسيطة: تقديم منتجات جلدية وإكسسوارات تجمع بين الأناقة
+            العصرية والجودة الأصيلة. نؤمن بأن التفاصيل تصنع الفارق، ولهذا نسعى
+            دائماً لاختيار أجود الخامات وتقديم تصاميم تليق بتميزكم.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 2: Why Us -->
+      <section class="about-section">
+        <div class="container-about animate-fade-up">
+          <h2>لمـاذا نـحـن؟</h2>
+          <p>
+            ما يميزنا هو التزامنا غير المحدود بالجودة. نحن لا نقدم مجرد منتج، بل
+            نقدم تجربة. نهتم بأدق التفاصيل، من اختيار الجلد الطبيعي الفاخر وحتى
+            التغليف الأنيق الذي يصل إليكم. رضاكم هو معيار نجاحنا الأول.
+          </p>
+          <div class="features-grid">
+            <div class="feature-card">
+              <i class="bi bi-gem"></i>
+              <h3>جودة عالية</h3>
+              <p>خامات مختارة بعناية فائقة</p>
+            </div>
+            <div class="feature-card">
+              <i class="bi bi-palette"></i>
+              <h3>تصاميم عصرية</h3>
+              <p>تناسب جميع الأذواق والمناسبات</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Warranty -->
+      <section class="about-section">
+        <div class="container-about animate-fade-up">
+          <h2>سياسـة الضـمـان</h2>
+          <p>
+            لأننا واثقون مما نقدم، نوفر لكم ضماناً شاملاً على عيوب الصناعة. نضمن
+            لك استلام منتج مطابق للمواصفات وصور العرض. في حال وجود أي ملاحظات،
+            فريق خدمة عملائنا جاهز دائماً لخدمتكم واستبدال المنتج فوراً.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 4: Shipping -->
+      <section class="about-section">
+        <div class="container-about animate-fade-up">
+          <h2>شركاء النجاح وتوصيل الطلبات</h2>
+          <p>
+            نصل إليكم أينما كنتم في جميع أنحاء الجمهورية بأفضل جودة وأسرع وقت.
+            نتعاون مع شركاء شحن موثوقين لضمان وصول طلباتكم بأمان.
+          </p>
+          <div class="shipping-partners">
+            <div class="partner">
+              <i class="bi bi-envelope-paper-fill"></i>
+              <span>البريد المصري</span>
+            </div>
+            <div class="partner">
+              <i class="bi bi-truck"></i>
+              <span>Arbet Express</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <script src="js/header.js"></script>
+  </body>
+</html>

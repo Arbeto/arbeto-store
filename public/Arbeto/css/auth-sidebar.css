@@ -1,0 +1,348 @@
+/* ============================================================
+   Auth Sidebar & Guest Modal Styles
+   ============================================================ */
+
+/* ===== Guest auth buttons in header ===== */
+.guest-auth-btns {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.auth-open-btn {
+    padding: 7px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background 0.2s, transform 0.15s;
+    font-family: inherit;
+    white-space: nowrap;
+}
+
+.login-open-btn {
+    background: #2c4b2c;
+    color: #fff;
+}
+
+.login-open-btn:hover {
+    background: #1e3a1e;
+    transform: translateY(-1px);
+}
+
+.register-open-btn {
+    background: #fff;
+    color: #2c4b2c;
+    border: 2px solid #2c4b2c;
+}
+
+.register-open-btn:hover {
+    background: #f0f7f0;
+    transform: translateY(-1px);
+}
+
+/* ===== Overlay ===== */
+.auth-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 9000;
+    pointer-events: all;
+    /* Freeze clicks through overlay */
+}
+
+.auth-overlay.active {
+    display: block;
+}
+
+/* ===== Sidebar ===== */
+.auth-sidebar {
+    position: fixed;
+    top: 0;
+    right: -420px;
+    width: 420px;
+    max-width: 95vw;
+    height: 100vh;
+    background: #f8f5da;
+    z-index: 9100;
+    box-shadow: -4px 0 30px rgba(0, 0, 0, 0.18);
+    transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+    direction: rtl;
+}
+
+.auth-sidebar.open {
+    right: 0;
+}
+
+.auth-sidebar-close {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #555;
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px 8px;
+    border-radius: 50%;
+    transition: background 0.2s;
+}
+
+.auth-sidebar-close:hover {
+    background: #f0f0f0;
+    color: #222;
+}
+
+.auth-sidebar-body {
+    padding: 30px 28px 40px;
+}
+
+.auth-sidebar-logo {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.auth-sidebar-logo img {
+    height: 54px;
+    object-fit: contain;
+}
+
+.auth-sidebar-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #2c4b2c;
+    margin-bottom: 22px;
+}
+
+/* ===== Form elements ===== */
+.auth-form-group {
+    margin-bottom: 15px;
+}
+
+.auth-form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.auth-input {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1.5px solid #d4d4d4;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #222;
+    background: #fffffc;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+.auth-input:focus {
+    outline: none;
+    border-color: #2c4b2c;
+    box-shadow: 0 0 0 3px rgba(44, 75, 44, 0.12);
+    background: #fff;
+}
+
+.auth-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+/* Gender radio */
+.auth-gender-group {
+    display: flex;
+    gap: 20px;
+}
+
+.gender-option {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.gender-option input[type="radio"] {
+    accent-color: #2c4b2c;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Submit button */
+.auth-submit-btn {
+    width: 100%;
+    padding: 13px;
+    background: #2c4b2c;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 6px;
+    font-family: inherit;
+    transition: background 0.2s, transform 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.auth-submit-btn:hover {
+    background: #1e3a1e;
+    transform: translateY(-1px);
+}
+
+.auth-submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Error message */
+.auth-error {
+    background: #fff2f2;
+    border: 1px solid #fca5a5;
+    color: #b91c1c;
+    border-radius: 7px;
+    padding: 9px 14px;
+    font-size: 13.5px;
+    margin-bottom: 14px;
+    display: none;
+}
+
+.auth-error.visible {
+    display: block;
+}
+
+/* Switch link */
+.auth-switch-text {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    margin-top: 16px;
+}
+
+.auth-switch-text a {
+    color: #2c4b2c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.auth-switch-text a:hover {
+    text-decoration: underline;
+}
+
+/* Spinner */
+.spin-icon {
+    display: inline-block;
+    animation: arb-spin 0.7s linear infinite;
+    font-size: 18px;
+}
+
+@keyframes arb-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* ===== Guest Modal ===== */
+.guest-modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 9200;
+    align-items: center;
+    justify-content: center;
+}
+
+.guest-modal-overlay.active {
+    display: flex;
+}
+
+.guest-modal {
+    background: #fff;
+    border-radius: 14px;
+    padding: 32px 28px;
+    max-width: 340px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    direction: rtl;
+    animation: modal-pop 0.25s ease;
+}
+
+@keyframes modal-pop {
+    from { transform: scale(0.88); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.guest-modal-close {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #888;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 4px 7px;
+    transition: background 0.2s;
+}
+
+.guest-modal-close:hover {
+    background: #f0f0f0;
+}
+
+.guest-modal-icon {
+    font-size: 44px;
+    color: #2c4b2c;
+    margin-bottom: 12px;
+}
+
+.guest-modal-msg {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.guest-modal-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.guest-modal-btns .auth-open-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ===== Cart guest notice ===== */
+.cart-guest-notice {
+    text-align: center;
+    padding: 18px 10px;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ===== Body lock when sidebar open ===== */
+body.auth-open {
+    overflow: hidden;
+}

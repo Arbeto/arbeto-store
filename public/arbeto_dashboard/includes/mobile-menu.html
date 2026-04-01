@@ -1,0 +1,21 @@
+<!-- Mobile Menu Toggle Button -->
+<button class="menu-toggle" onclick="toggleSidebar()">
+  <i class="bi bi-list"></i>
+</button>
+
+<!-- Sidebar Overlay -->
+<div class="sidebar-overlay" onclick="closeSidebar()"></div>
+
+<!-- Add close button to sidebar (add this as first child inside nav.sidebar) -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sidebar = document.querySelector("nav.sidebar");
+    if (sidebar && !sidebar.querySelector(".sidebar-close")) {
+      const closeBtn = document.createElement("button");
+      closeBtn.className = "sidebar-close";
+      closeBtn.onclick = closeSidebar;
+      closeBtn.innerHTML = '<i class="bi bi-x-lg"></i>';
+      sidebar.insertBefore(closeBtn, sidebar.firstChild);
+    }
+  });
+</script>

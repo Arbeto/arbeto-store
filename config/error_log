@@ -1,0 +1,244 @@
+[27-Aug-2025 14:41:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/database.php on line 19
+[27-Aug-2025 14:51:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/app.php on line 16
+[27-Aug-2025 14:52:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/cache.php on line 18
+[29-Aug-2025 13:41:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/database.php on line 19
+[29-Aug-2025 13:41:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/mail.php on line 17
+[29-Aug-2025 13:41:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/app.php on line 16
+[29-Aug-2025 13:41:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/services.php on line 18
+[29-Aug-2025 20:29:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/database.php on line 19
+[29-Aug-2025 20:29:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/mail.php on line 17
+[29-Aug-2025 20:29:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/app.php on line 16
+[29-Aug-2025 20:29:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/services.php on line 18
+[30-Aug-2025 09:04:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/database.php on line 19
+[30-Aug-2025 09:04:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/mail.php on line 17
+[30-Aug-2025 09:04:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/app.php on line 16
+[30-Aug-2025 09:04:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/services.php on line 18
+[30-Aug-2025 16:44:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/database.php on line 19
+[30-Aug-2025 16:44:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/mail.php on line 17
+[30-Aug-2025 16:44:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/app.php on line 16
+[30-Aug-2025 16:44:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/services.php on line 18
+[31-Aug-2025 15:56:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/cache.php on line 18
+[31-Aug-2025 15:56:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/auth.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/auth.php on line 17
+[31-Aug-2025 15:56:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/app.php on line 16
+[31-Aug-2025 15:56:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/session.php on line 21
+[31-Aug-2025 15:56:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/queue.php on line 16
+[31-Aug-2025 15:56:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/services.php on line 18
+[31-Aug-2025 15:56:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/mail.php on line 17
+[31-Aug-2025 15:56:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/database.php on line 19
+[31-Aug-2025 15:56:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/filesystems.php on line 16
+[31-Aug-2025 18:32:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/app.php on line 16
+[01-Sep-2025 05:57:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/session.php on line 21
+[01-Sep-2025 05:57:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/filesystems.php on line 16
+[01-Sep-2025 05:57:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/cache.php on line 18
+[01-Sep-2025 05:57:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/database.php on line 19
+[01-Sep-2025 05:57:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/mail.php on line 17
+[01-Sep-2025 05:57:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/app.php on line 16
+[01-Sep-2025 05:57:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/services.php on line 18
+[01-Sep-2025 05:57:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/auth.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/auth.php on line 17
+[01-Sep-2025 05:57:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/queue.php on line 16
+[01-Sep-2025 12:29:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/auth.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/auth.php on line 17
+[01-Sep-2025 12:29:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/app.php on line 16
+[01-Sep-2025 12:29:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/mail.php on line 17
+[01-Sep-2025 12:29:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/database.php on line 19
+[01-Sep-2025 12:29:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/filesystems.php on line 16
+[01-Sep-2025 12:29:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/queue.php on line 16
+[01-Sep-2025 12:29:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/cache.php on line 18
+[01-Sep-2025 12:29:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/services.php on line 18
+[01-Sep-2025 12:29:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/session.php on line 21
+[01-Sep-2025 14:12:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/mail.php on line 17
+[01-Sep-2025 14:13:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/auth.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/auth.php on line 17
+[01-Sep-2025 14:13:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/app.php on line 16
+[01-Sep-2025 14:13:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/session.php on line 21
+[01-Sep-2025 14:13:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/filesystems.php on line 16
+[01-Sep-2025 14:13:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/services.php on line 18
+[01-Sep-2025 14:13:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/database.php on line 19
+[01-Sep-2025 14:13:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/cache.php on line 18
+[01-Sep-2025 15:39:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/app.php on line 16
+[01-Sep-2025 15:39:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/cache.php on line 18
+[01-Sep-2025 15:39:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/queue.php on line 16
+[01-Sep-2025 15:39:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/mail.php on line 17
+[01-Sep-2025 15:39:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/database.php on line 19
+[01-Sep-2025 15:39:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/admin/public_html/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/admin/public_html/config/session.php on line 21

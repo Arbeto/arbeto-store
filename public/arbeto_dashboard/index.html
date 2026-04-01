@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="image\favicoon.png" />
+    <link rel="stylesheet" href="css\style.css">
+    <title>Arbeto Dashboard</title>
+        <!-- مكتية الشعارات bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image\logo-nunbg.png" alt="Logo">
+        </div>
+    </header>
+    <nav class="sidebar">
+       <div class="side-name">
+        <img class="user-image" src="image\dashboard\user.png" alt="">
+        <span>مدير المتجر</span>
+    </div>
+
+    <div class="dvaider"></div>
+
+    <ul class="page-sidebar">
+        <label class="title-category-sidebar">لوحة التحكم </label>
+        <li class="active"><a href="/">لوحة التحكم <span style="font-size: 20px;" class="bi bi-speedometer"></span></a></li>
+        <label class="title-category-sidebar">المنتجات والطلبات</label>
+        <li><a href="pages/products.html">المنتجات <span style="font-size: 20px;" class="bi bi-box-seam-fill"></span></a></li>
+        <li><a href="pages/categories-offers.html">الأقسام والعروض <span style="font-size: 20px;" class="bi bi-person-vcard-fill"></span></a></li>
+        <li><a href="pages/orders.html">الطلبات <span style="font-size: 20px;" class="bi bi-clipboard2-minus-fill"></span></a></li>
+        <li><a href="pages/customers.html">العملاء <span style="font-size: 20px;" class="bi bi-people-fill"></span></a></li>
+        <label class="title-category-sidebar">شركات الشحن</label>
+        <li><a href="pages/arbeto-express.html">Arbeto Express <span style="font-size: 20px;" class="bi bi-truck"></span></a></li>
+        <li><a href="pages/egypt-post.html">البريد المصري <span style="font-size: 20px;" class="bi bi-box-seam-fill"></span></a></li>
+        <label class="title-category-sidebar">الإحصائيات</label>
+        <li><a href="pages/analysis.html">التقارير المالية<span style="font-size: 20px;" class="bi bi-bar-chart-line-fill"></span></a></li>
+    </ul>
+    </nav>
+
+    <div class="container-dashboard">
+        <!-- بطاقات الاحصائية -->
+        <div class="cadrs-details">
+            <!-- المنتجات المتاحة -->
+            <div class="card">
+                <img src="image\dashboard\boxes.png" alt="">
+                <div class="card-content">
+                    <p>عدد المنتجات المتاحة</p>
+                    <h2>15 <span>منتج</span></h2>
+                </div>
+            </div>
+
+            <!-- عدد الأوردرات -->
+            <div class="card">
+                <img src="image\dashboard\checklist.png" alt="">
+                <div class="card-content">
+                    <p>عدد الأوردرات المباعة</p>
+                    <h2>30 <span>أوردر</span></h2>
+
+                </div>
+            </div>
+
+            <!-- Arbeto Boxs -->
+            <div class="card">
+                <img src="image\dashboard\gift.png" alt="">
+                <div class="card-content">
+                    <p>عدد  بوكسات اربيتو</p>
+                    <h2>18 <span>بوكس</span></h2>
+
+                </div>
+            </div>
+
+            <!-- العملاء -->
+            <div class="card">
+                <img src="image\dashboard\people.png" alt="">
+                <div class="card-content">
+                    <p>العملاء</p>
+                    <h2>11 <span>عميل</span></h2>
+                </div>
+
+            </div>
+
+            <!-- عدد الزوار -->
+            <div class="card">
+                <img src="image\dashboard\audience.png" alt="">
+                <div class="card-content">
+                    <p>عدد الزوار </p>
+                    <h2>100 <span>زائر</span></h2>
+
+                </div>
+            </div>
+
+            <!-- المبيعات -->
+            <div class="card">
+                <img src="image\dashboard\price-tag.png" alt="">
+                <div class="card-content">
+                    <p>المبيعات</p>
+                    <h2>100 <span>جنية</span></h2>
+                </div>
+
+            </div>
+
+            <!-- Nit Profit -->
+            <div class="card">
+                <img src="image\dashboard\profits.png" alt="">
+                <div class="card-content">
+                    <p>صافي الربح</p>
+                    <h2>60 <span>جنية</span></h2>
+
+                </div>
+            </div>
+
+             <!-- المرتجعات -->
+            <div class="card">
+                <img src="image\dashboard\loss.png" alt="">
+                <div class="card-content">
+                    <p>عدد المرتجعات</p>
+                    <h2 style="color: rgb(201, 59, 59);">3 <span>أوردر</span></h2>
+
+                </div>
+            </div>
+
+             <!-- الاوردرات الملغية -->
+            <div class="card">
+                <img src="image\dashboard\wrong-parcel.png" alt="">
+                <div class="card-content">
+                    <p>عدد الأوردرات الملغية</p>
+                    <h2 style="color: rgb(201, 59, 59);">3 <span>أوردر</span></h2>
+
+                </div>
+            </div>
+
+            <!-- مدفوعات الشحن -->
+            <div class="card">
+                <img src="image\dashboard\cod.png" alt="">
+                <div class="card-content">
+                    <p>المبالغ المدفوعة للشحن</p>
+                    <h2>100 <span>جنية</span></h2>
+
+                </div>
+            </div>
+
+            <!-- Arbet Express -->
+            <div class="card">
+                <img style="border-radius: 50%;" src="image\dashboard\arespress.png" alt="">
+                <div class="card-content">
+                    <p>شحن عن طريق أربيتو</p>
+                    <h2>100 <span>جنية</span></h2>
+
+                </div>
+            </div>
+
+            <!-- البريد المصري -->
+            <div class="card">
+                <img src="image\dashboard\partner-logo.svg" alt="">
+                <div class="card-content">
+                    <p>شحن عن طريق البريد المصري</p>
+                    <h2>100 <span>جنية</span></h2>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ترتيب أفضل -->
+       <div class="container-top-5">
+         
+        <!-- أفضل المنتجات مبيعا -->
+         <div class="table-top-product card-table">
+            <h3>افضل المنتجات مبيعا</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>السعر</th>
+                        <th>اسم المنتج</th>
+                        <th>#</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>100$</td>
+                        <td>شنطة جلدية بنية</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>90$</td>
+                        <td>شنطة جلدية بنية</td>
+                        <td>2</td>
+                    </tr>
+                     <tr>
+                        <td>80$</td>
+                        <td>شنطة جلدية بنية</td>
+                        <td>3</td>
+                    </tr>
+                     <tr>
+                        <td>70$</td>
+                        <td>شنطة جلدية بنية</td>
+                        <td>4</td>
+                    </tr>
+                     <tr>
+                        <td>60$</td>
+                        <td>شنطة جلدية بنية</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- اعلى المحافظات طلبا -->
+        <div class="table-top-city card-table">
+            <h3>اعلى المحافظات طلبا</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>العدد</th>
+                        <th>العنوان</th>
+                        <th>#</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>150</td>
+                        <td>القاهرة</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>120</td>
+                        <td>الجيزة</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td>الاسكندرية</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>80</td>
+                        <td>المنصورة</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>60</td>
+                        <td>طنطا</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- اعلى العملاء طلبا -->
+        <div class="table-top-customer card-table">
+            <h3>اعلى العملاء طلبا</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>السعر</th>
+                        <th>اسم العميل</th>
+                        <th>#</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5000</td>
+                        <td>احمد محمد</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>4500</td>
+                        <td>محمود علي</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>4000</td>
+                        <td>سارة احمد</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>3500</td>
+                        <td>علي حسن</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>3000</td>
+                        <td>منى السيد</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       </div>
+    </div>
+    <!-- Mobile Menu Includes -->
+    <button class="menu-toggle" onclick="toggleSidebar()"><i class="bi bi-list"></i></button>
+    <div class="sidebar-overlay"></div>
+    <script src="js/mobile-menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,405 @@
+
+
+    <main class="account" style="gap: 0">
+      <div
+        class="container-header-orders"
+        style="margin-bottom: 12px; padding: 0 25px"
+      >
+        <h2>طلباتك</h2>
+        <section class="coontainer-filter">
+          <!-- <div class="filter">
+            <input type="search" />
+          </div> -->
+          <button
+            class="pagination-order"
+            style="
+              display: flex;
+              flex-direction: row-reverse;
+              align-items: center;
+              gap: 10px;
+            "
+          >
+            أخر 3 أشهر <span class="bi bi-caret-down-fill"></span>
+          </button>
+          <div class="pagination-order-dropdown">
+            <button class="active">أخر 3 أشهر</button>
+            <button>أخر 6 أشهر</button>
+            <button>2025</button>
+            <button>الكل</button>
+          </div>
+        </section>
+      </div>
+
+      <div class="orders-container">
+        <!-- طلب 1 -->
+        <div class="order-card">
+          <div class="order-header">
+            <span class="delivery-status"
+              >تم التوصيل في الثلاثاء 9 ديسمبر
+              <i style="font-size: 21px" class="bi bi-bag-check-fill"></i
+            ></span>
+            <!-- في حالة زر التقييم فقط -->
+            <div class="order-actions" style="flex-direction: row-reverse">
+              <button class="rate-btn">تقييم المنتج</button>
+              <div class="more-options">
+                <button class="three-dots-btn">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+                <div class="options-dropdown">
+                  <button class="tracking-btn">تتبع الطلبية</button>
+                  <button class="summary-btn">ملخص الطلبية</button>
+                  <button><a href="#contact">التواصل مع الدعم</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-body">
+            <div class="product-info">
+              <img
+                src="../images/bag-product.jpg"
+                alt="منتج"
+                class="product-img"
+              />
+              <div class="product-details">
+                <h3 class="product-title">
+                  صندوق هدايا فاخر - المجموعة الملكية
+                </h3>
+                <p class="product-price">250.00 <span>جنية</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- طلب 2 -->
+        <div class="order-card">
+          <div class="order-header">
+            <span class="delivery-status"
+              >تم إلغاء الطلبية
+              <i style="font-size: 21px" class="bi bi-bag-x-fill"></i
+            ></span>
+            <div class="order-actions">
+              <div class="more-options">
+                <button
+                  class="three-dots-btn bi bi-three-dots-vertical"
+                ></button>
+                <div class="options-dropdown">
+                  <button class="summary-btn">ملخص الطلبية</button>
+                  <button><a href="#contact">التواصل مع الدعم</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-body">
+            <div class="product-info">
+              <img
+                src="../images/bag-product.jpg"
+                alt="منتج"
+                class="product-img"
+              />
+              <div class="product-details">
+                <h3 class="product-title">باقة زهور طبيعية - تشكيلة الربيع</h3>
+                <p class="product-price">250.00 <span>جنية</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- طلب 3 -->
+        <div class="order-card">
+          <div class="order-header">
+            <span class="delivery-status"
+              >في طريقها إليك <i style="font-size: 21px" class="bi bi-truck"></i
+            ></span>
+            <div class="order-actions">
+              <div class="more-options">
+                <button
+                  class="three-dots-btn bi bi-three-dots-vertical"
+                ></button>
+                <div class="options-dropdown">
+                  <button class="tracking-btn">تتبع الطلبية</button>
+                  <button class="summary-btn">ملخص الطلبية</button>
+                  <button><a href="#contact">التواصل مع الدعم</a></button>
+                  <button class="cancel-btn">إلغاء الطلبية</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-body">
+            <div class="product-info">
+              <img
+                src="../images/bag-product.jpg"
+                alt="منتج"
+                class="product-img"
+              />
+              <div class="product-details">
+                <h3 class="product-title">باقة زهور طبيعية - تشكيلة الربيع</h3>
+                <p class="product-price">250.00 <span>جنية</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- مودل التقييم -->
+    <div id="ratingModal" class="modal-overlay">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <div class="modal-header">
+          <h3>تقييم المنتج</h3>
+        </div>
+        <div class="modal-body">
+          <div class="stars-container">
+            <i class="bi bi-star-fill star" data-value="5"></i>
+            <i class="bi bi-star-fill star" data-value="4"></i>
+            <i class="bi bi-star-fill star" data-value="3"></i>
+            <i class="bi bi-star-fill star" data-value="2"></i>
+            <i class="bi bi-star-fill star" data-value="1"></i>
+          </div>
+          <div class="comment-section">
+            <label for="productComment"
+              >اكتب تعليقك على المنتج وأضف رأيك للآخرين</label
+            >
+            <textarea
+              id="productComment"
+              placeholder="اكتب هنا..."
+              rows="4"
+              style="color: #2c4b2c"
+            ></textarea>
+          </div>
+          <div class="upload-section">
+            <p class="upload-note">يمكنك إضافة بحد أقصى 4 صور للمنتج</p>
+            <div id="imagePreviewContainer" class="preview-container">
+              <!-- Previews will appear here -->
+              <label for="imageUpload" class="upload-btn">
+                <i class="bi bi-camera"></i>
+                <input
+                  type="file"
+                  id="imageUpload"
+                  multiple
+                  accept="image/*"
+                  hidden
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="submitRating" class="submit-btn" disabled>إرسال</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- مودل ملخص الطلبية -->
+    <div id="summaryModal" class="modal-overlay">
+      <div class="modal-content">
+        <button class="close-modal" id="close-modal">&times;</button>
+        <div class="modal-header">
+          <h3>ملخص الطلبية</h3>
+        </div>
+        <div class="modal-body">
+          <table class="specs-table">
+            <tbody>
+              <tr>
+                <td class="spec-value">مجموع المنتجات</td>
+                <td class="space-header">4</td>
+              </tr>
+              <tr>
+                <td class="spec-value">رسوم الشحن</td>
+                <td class="space-header">55</td>
+              </tr>
+              <tr>
+                <td class="spec-value">طريقة الدفع</td>
+                <td class="space-header">عند الاستلام</td>
+              </tr>
+              <tr>
+                <td class="spec-value">عنوان الشحن</td>
+                <td class="space-header" style="line-height: 1.5 !important">
+                  شارع الفريان قرية النقيرم قرية النقيرم قرية النقيرم محافظة
+                  الغربية
+                </td>
+              </tr>
+              <tr>
+                <td class="spec-value">رقم هاتف</td>
+                <td class="space-header">01195748841</td>
+              </tr>
+              <tr>
+                <td class="spec-value">الإجمالي</td>
+                <td class="space-header">670</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button id="closeSummaryModal" class="submit-btn">إغلاق</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- مودل إلغاء الطلبية -->
+    <div id="cancelModal" class="modal-overlay">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <div class="modal-header">
+          <h3>إلغاء الطلبية</h3>
+        </div>
+        <div class="modal-body">هل انت متأكد من إلغاء الطلبية ؟</div>
+        <div class="comment-section" style="margin-top: 20px">
+          <label for="productComment">سبب إلغاء الطلبية (اختياري)</label>
+          <textarea
+            id="cancelReason"
+            placeholder="اكتب هنا..."
+            rows="4"
+            style="color: #2c4b2c"
+          ></textarea>
+        </div>
+        <div class="modal-footer" style="display: flex; gap: 10px">
+          <button
+            id="confirmCancel"
+            class="submit-btn"
+            style="background-color: #dc3545"
+          >
+            موافق
+          </button>
+          <button
+            id="closeCancelModal"
+            class="submit-btn"
+            style="background-color: #a7a7a7"
+          >
+            إغلاق
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- مودل تتبع الطلبية -->
+    <div id="trackingModal" class="modal-overlay">
+      <div class="modal-content">
+        <button id="closeModal" class="close-modal">&times;</button>
+        <div class="modal-body">
+          <div class="tracking-timeline">
+            <div class="timeline-step completed">
+              <div class="step-info">
+                <span class="step-title">تم استلام الطلبية</span>
+                <span class="step-date">5/1/2026 1:26pm</span>
+              </div>
+              <div class="step-icon">
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+            </div>
+
+            <div class="timeline-step completed">
+              <div class="step-info">
+                <span class="step-title">تم الموافقة على الطلبية</span>
+                <span class="step-date">5/1/2026 1:30pm</span>
+              </div>
+              <div class="step-icon">
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+            </div>
+
+            <div class="timeline-step in-progress">
+              <div class="step-info">
+                <span class="step-title">جاري تحضير الطلبية</span>
+                <span class="step-date">5/1/2026 2:45pm</span>
+              </div>
+              <div class="step-icon">
+                <i class="bi bi-clock-history"></i>
+              </div>
+            </div>
+
+            <div class="timeline-step pending">
+              <div class="step-info">
+                <span class="step-title">خرجت للتوصيل</span>
+                <span class="step-date">--:--</span>
+              </div>
+              <div class="step-icon">
+                <i class="bi bi-circle"></i>
+              </div>
+            </div>
+
+            <div class="timeline-step pending">
+              <div class="step-info">
+                <span class="step-title">تم تسليم الطلبية بنجاح</span>
+                <span class="step-date">--:--</span>
+              </div>
+              <div class="step-icon">
+                <i class="bi bi-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button
+            id="closeTrackingModal"
+            class="submit-btn"
+            style="background-color: #a7a7a7"
+          >
+            إغلاق
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript للسلايدر والقوائم -->
+    <script src="../js/header.js"></script>
+    <script src="../js/rating.js"></script>
+    <script src="../js/summary.js"></script>
+    <script src="../js/tracking.js"></script>
+    <script src="../js/cancel.js"></script>
+    <script>
+      // Dropdown toggle for order actions
+      document.querySelectorAll(".three-dots-btn").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const dropdown = btn.nextElementSibling;
+          // Close other open dropdowns
+          document
+            .querySelectorAll(".options-dropdown.show")
+            .forEach((openDropdown) => {
+              if (openDropdown !== dropdown)
+                openDropdown.classList.remove("show");
+            });
+          dropdown.classList.toggle("show");
+        });
+      });
+
+      // Close dropdown when clicking outside
+      window.addEventListener("click", () => {
+        document
+          .querySelectorAll(".options-dropdown.show")
+          .forEach((dropdown) => {
+            dropdown.classList.remove("show");
+          });
+      });
+    </script>
+    <!-- الباجينشن -->
+    <script>
+      // Dropdown toggle for order actions
+      document.querySelectorAll(".pagination-order").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const dropdown = btn.nextElementSibling;
+          // Close other open dropdowns
+          document
+            .querySelectorAll(".pagination-order-dropdown.show")
+            .forEach((openDropdown) => {
+              if (openDropdown !== dropdown)
+                openDropdown.classList.remove("show");
+            });
+          dropdown.classList.toggle("show");
+        });
+      });
+
+      // Close dropdown when clicking outside
+      window.addEventListener("click", () => {
+        document
+          .querySelectorAll(".pagination-order-dropdown.show")
+          .forEach((dropdown) => {
+            dropdown.classList.remove("show");
+          });
+      });
+    </script>
+  </body>
+</html>

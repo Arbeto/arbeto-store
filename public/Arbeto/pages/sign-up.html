@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arbeto</title>
+    <link rel="icon" type="image/x-icon" href="../images\favicoon.png" />
+
+    <!-- ملف الاستايل الاساسي -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <!-- مكتية الشعارات bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="register-container">
+        <h2>إنشاء حساب جديد</h2>
+        <form action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">الاسم الأول</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">الاسم الأخير</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">رقم الهاتف</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="email">البريد الإلكتروني</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="password">كلمة المرور</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+            <div class="form-group">
+              <label for="confirmPassword">إعادة كلمة المرور</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="gender">النوع</label>
+              <select id="gender" name="gender">
+                <option value="male">ذكر</option>
+                <option value="female">أنثى</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="age"
+                >العمر <span class="optional">(اختياري)</span></label
+              >
+              <input type="number" id="age" name="age" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address"
+              >عنوان التوصيل <span class="optional">(اختياري)</span></label
+            >
+            <textarea id="address" name="address" rows="2"></textarea>
+          </div>
+
+          <a href="login.html" class="login-link">لديك حساب؟ سجل دخولك</a>
+
+          <button onclick="document.location.href='login.html'" type="submit" class="register-btn">تسجيل</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

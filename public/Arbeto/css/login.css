@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+  background-color: #fffdf1;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  direction: rtl; /* Right-to-left for Arabic */
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form Container */
+.register-container {
+  background: #f8f5da;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 500px;
+}
+
+.register-container h2 {
+  color: #31694e;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+/* Form Layout */
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.form-row .form-group {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+/* Input Styles */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #d9d6be;
+  border-radius: 8px;
+  background-color: #fffdf1;
+  color: #2c4b2c;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #31694e;
+  box-shadow: 0 0 0 3px rgba(49, 105, 78, 0.1);
+}
+
+label {
+  color: #31694e;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Buttons and Links */
+.register-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #31694e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.register-btn:hover {
+  background-color: #25503b;
+}
+
+.login-link {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #31694e;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Optional Label */
+.optional {
+  font-size: 12px;
+  color: #8a8a8a;
+  font-weight: normal;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .register-container {
+    padding: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .register-container h2 {
+    font-size: 24px;
+  }
+}

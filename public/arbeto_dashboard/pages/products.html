@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../image\favicoon.png" />
+    <link rel="stylesheet" href="../css\style.css">
+    <link rel="stylesheet" href="../css\prooducts.css">
+    <title>Arbeto Dashboard</title>
+        <!-- مكتية الشعارات bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../image\logo-nunbg.png" alt="Logo">
+        </div>
+    </header>
+    <nav class="sidebar">
+       <div class="side-name">
+        <img class="user-image" src="../image\dashboard\user.png" alt="">
+        <span>مدير المتجر</span>
+    </div>
+
+    <div class="dvaider"></div>
+
+        <ul class="page-sidebar">
+        <label class="title-category-sidebar">لوحة التحكم </label>
+        <li ><a href="/">لوحة التحكم <span style="font-size: 20px;" class="bi bi-speedometer"></span></a></li>
+        <label class="title-category-sidebar">المنتجات والطلبات</label>
+        <li class="active"><a href="/pages/products.html">المنتجات <span style="font-size: 20px;" class="bi bi-box-seam-fill"></span></a></li>
+        <li><a href="/pages/categories-offers.html">الأقسام والعروض <span style="font-size: 20px;" class="bi bi-person-vcard-fill"></span></a></li>
+        <li><a href="/pages/orders.html">الطلبات <span style="font-size: 20px;" class="bi bi-clipboard2-minus-fill"></span></a></li>
+        <li><a href="/pages/customers.html">العملاء <span style="font-size: 20px;" class="bi bi-people-fill"></span></a></li>
+        <label class="title-category-sidebar">شركات الشحن</label>
+        <li><a href="/pages/arbeto-express.html">Arbeto Express <span style="font-size: 20px;" class="bi bi-truck"></span></a></li>
+        <li><a href="/pages/egypt-post.html">البريد المصري <span style="font-size: 20px;" class="bi bi-box-seam-fill"></span></a></li>
+        <label class="title-category-sidebar">الإحصائيات</label>
+        <li><a href="/pages/analysis.html">التقارير المالية<span style="font-size: 20px;" class="bi bi-bar-chart-line-fill"></span></a></li>
+    </ul>
+    </nav>
+
+  <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h1><i class="bi bi-box-seam"></i> لوحة إدارة المنتجات</h1>
+            <p>أضف منتجات جديدة أو قم بتعديل المنتجات الحالية</p>
+        </div>
+
+        <div class="toggle-container">
+            <button type="button" class="toggle-btn active" data-type="normal">
+                <i class="bi bi-box"></i> منتج عادي
+            </button>
+            <button type="button" class="toggle-btn" data-type="box">
+                <i class="bi bi-box-fill"></i> منتج بوكس
+            </button>
+            <button type="button" class="toggle-btn" data-type="new-box">
+                <i class="bi bi-layers"></i> منتج في الكل
+            </button>
+        </div>
+
+        <div id="formsContainer" class="forms-container">
+            <!-- نموذج المنتج العادي -->
+            <div id="normalForm" class="form-card">
+                <div class="form-header">
+                    <div class="form-icon">
+                        <i class="bi bi-box"></i>
+                    </div>
+                    <div class="form-title">إضافة منتج عادي</div>
+                </div>
+                
+                <form class="compact-form add-new-product">
+
+                       <div class="form-group">
+                        <label class="form-label" for="categorySelect">
+                            <i class="bi bi-grid"></i> الفئة
+                        </label>
+                        <select id="categorySelect" class="form-control">
+                            <option value="" disabled selected>اختر الفئة</option>
+                            <option value="accessories">الاكسسوارات</option>
+                            <option value="mugs">الماجات</option>
+                            <option value="perfumes">العطور</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="productName">
+                            <i class="bi bi-tag"></i> اسم المنتج
+                        </label>
+                        <input type="text" id="productName" class="form-control" placeholder="أدخل اسم المنتج">
+                    </div>
+
+                 
+
+                    <div class="form-group full-width">
+                        <label class="form-label" for="productDescription">
+                            <i class="bi bi-text-paragraph"></i> الوصف
+                        </label>
+                        <textarea id="productDescription" class="form-control" placeholder="أدخل وصف المنتج"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="productQuantity">
+                            <i class="bi bi-123"></i> الكمية
+                        </label>
+                        <input type="number" id="productQuantity" class="form-control" min="0" value="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="subCategorySelect">
+                            <i class="bi bi-percent"></i> عرض خاص
+                        </label>
+                        <select id="subCategorySelect" class="form-control">
+                            <option value="" disabled selected>اختر صفحة العروض</option>
+                            <option value="ramadan">تخفيضات شهر رمضان</option>
+                            <option value="valentines">تخفيضات عيد الحب</option>
+                        </select>
+                    </div>
+
+                    <div class="price-group">
+                        <div class="form-group">
+                            <label class="form-label" for="priceInput">
+                                <i class="bi bi-currency-dollar"></i> السعر
+                            </label>
+                            <input type="number" id="priceInput" class="form-control" step="0.01" placeholder="0.00">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="discountInput">
+                                <i class="bi bi-percent"></i> نسبة الخصم
+                            </label>
+                            <input type="number" id="discountInput" class="form-control" value="0" step="0.1" min="0" max="100">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="totalPriceInput">
+                                <i class="bi bi-calculator"></i> السعر الإجمالي
+                            </label>
+                            <input type="number" id="totalPriceInput" class="form-control" step="0.01" readonly>
+                        </div>
+                    </div>
+
+                    <div class="image-upload-container" onclick="document.getElementById('productImages').click()">
+                        <input type="file" id="productImages" multiple accept="image/*" style="display: none;">
+                        <div class="upload-label">
+                            <i class="bi bi-cloud-arrow-up"></i>
+                            <span>صور المنتج (بحد أقصى 8 صور)</span>
+                            <small style="color: #8a9a8a; font-size: 12px;">انقر لرفع الصور</small>
+                        </div>
+                        <div id="imagePreviewContainer"></div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label class="form-label" for="sentenceInput">
+                            <i class="bi bi-chat-text"></i> جمل بطاقة المنتج
+                        </label>
+                        <div class="input-with-btn">
+                            <input type="text" id="sentenceInput" class="form-control" placeholder="أدخل جملة لعرضها أسفل السعر">
+                            <button type="button" id="addSentenceBtn" class="add-small-btn">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </div>
+                        <div id="sentencePreviewContainer" class="tags-container"></div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label class="form-label" for="hintInput">
+                            <i class="bi bi-search"></i> تلميحات البحث
+                        </label>
+                        <div class="input-with-btn">
+                            <input type="text" id="hintInput" class="form-control" placeholder="أدخل تلميحاً لتسهيل البحث عن المنتج">
+                            <button type="button" id="addHintBtn" class="add-small-btn">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </div>
+                        <div id="hintPreviewContainer" class="tags-container"></div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">
+                            <i class="bi bi-check-circle"></i> حفظ المنتج
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- نموذج منتج البوكس -->
+            <div id="boxForm" class="form-card" style="display: none;">
+                <div class="form-header">
+                    <div class="form-icon">
+                        <i class="bi bi-box-fill"></i>
+                    </div>
+                    <div class="form-title">إضافة منتج بوكس</div>
+                </div>
+                
+                <form class="compact-form add-new-product">
+                    <div class="form-group">
+                        <label class="form-label" for="box-productName">
+                            <i class="bi bi-tag"></i> اسم المنتج
+                        </label>
+                        <input type="text" id="box-productName" class="form-control" placeholder="أدخل اسم المنتج">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="box-typeSelect">
+                            <i class="bi bi-boxes"></i> نوع المنتج
+                        </label>
+                        <select id="box-typeSelect" class="form-control">
+                            <option value="" disabled selected>اختر النوع</option>
+                            <option value="normal">عادي</option>
+                            <option value="decorated">تزيين</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label class="form-label" for="box-productDescription">
+                            <i class="bi bi-text-paragraph"></i> الوصف
+                        </label>
+                        <textarea id="box-productDescription" class="form-control" placeholder="أدخل وصف المنتج"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="box-productQuantity">
+                            <i class="bi bi-123"></i> الكمية
+                        </label>
+                        <input type="number" id="box-productQuantity" class="form-control" min="0" value="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="box-categorySelect">
+                            <i class="bi bi-grid"></i> الفئة
+                        </label>
+                        <select id="box-categorySelect" class="form-control">
+                            <option value="" disabled selected>اختر الفئة</option>
+                            <option value="accessories">الاكسسوارات</option>
+                            <option value="mugs">الماجات</option>
+                            <option value="perfumes">العطور</option>
+                        </select>
+                    </div>
+
+                    <div class="price-group">
+                        <div class="form-group">
+                            <label class="form-label" for="box-priceInput">
+                                <i class="bi bi-currency-dollar"></i> السعر
+                            </label>
+                            <input type="number" id="box-priceInput" class="form-control" step="0.01" placeholder="0.00">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="box-discountInput">
+                                <i class="bi bi-percent"></i> نسبة الخصم
+                            </label>
+                            <input type="number" id="box-discountInput" class="form-control" value="0" step="0.1" min="0" max="100">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="box-totalPriceInput">
+                                <i class="bi bi-calculator"></i> السعر الإجمالي
+                            </label>
+                            <input type="number" id="box-totalPriceInput" class="form-control" step="0.01" readonly>
+                        </div>
+                    </div>
+
+                    <div class="image-upload-container" onclick="document.getElementById('box-productImages').click()">
+                        <input type="file" id="box-productImages" multiple accept="image/*" style="display: none;">
+                        <div class="upload-label">
+                            <i class="bi bi-cloud-arrow-up"></i>
+                            <span>صور المنتج (بحد أقصى 8 صور)</span>
+                            <small style="color: #8a9a8a; font-size: 12px;">انقر لرفع الصور</small>
+                        </div>
+                        <div id="box-imagePreviewContainer"></div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label class="form-label" for="box-sentenceInput">
+                            <i class="bi bi-chat-text"></i> جمل بطاقة المنتج
+                        </label>
+                        <div class="input-with-btn">
+                            <input type="text" id="box-sentenceInput" class="form-control" placeholder="أدخل جملة لعرضها أسفل السعر">
+                            <button type="button" id="box-addSentenceBtn" class="add-small-btn">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </div>
+                        <div id="box-sentencePreviewContainer" class="tags-container"></div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label class="form-label" for="box-hintInput">
+                            <i class="bi bi-search"></i> تلميحات البحث
+                        </label>
+                        <div class="input-with-btn">
+                            <input type="text" id="box-hintInput" class="form-control" placeholder="أدخل تلميحاً لتسهيل البحث عن المنتج">
+                            <button type="button" id="box-addHintBtn" class="add-small-btn">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </div>
+                        <div id="box-hintPreviewContainer" class="tags-container"></div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">
+                            <i class="bi bi-check-circle"></i> حفظ المنتج
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- منتج في الكل -->
+            <div id="newBoxForm" class="form-card" style="display: none;">
+                <div class="form-header">
+                    <div class="form-icon">
+                        <i class="bi bi-box-fill"></i>
+                    </div>
+                    <div class="form-title">إضافة منتج عادي وبوكس</div>
+                </div>
+                
+                <form class="compact-form add-new-product">
+                    <div class="form-group">
+                        <label class="form-label" for="new-box-productName">
+                            <i class="bi bi-tag"></i> اسم المنتج (عادي)
+                        </label>
+                        <input type="text" id="new-box-productName" class="form-control" placeholder="أدخل اسم المنتج">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="new-box-boxName">
+                            <i class="bi bi-tag"></i> اسم المنتج (بوكس)
+                        </label>
+                        <input type="text" id="new-box-boxName" class="form-control" placeholder="أدخل اسم المنتج">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label class="form-label" for="new-box-productDescription">
+                            <i class="bi bi-text-paragraph"></i> الوصف
+                        </label>
+                        <textarea id="new-box-productDescription" class="form-control" placeholder="أدخل وصف المنتج"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="new-box-productQuantity">
+                            <i class="bi bi-123"></i> الكمية
+                        </label>
+                        <input type="number" id="new-box-productQuantity" class="form-control" min="0" value="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="new-box-categorySelect">
+                            <i class="bi bi-grid"></i> الفئة
+                        </label>
+                        <select id="new-box-categorySelect" class="form-control">
+                            <option value="" disabled selected>اختر الفئة</option>
+                            <option value="accessories">الاكسسوارات</option>
+                            <option value="mugs">الماجات</option>
+                            <option value="perfumes">العطور</option>
+                        </select>
+                    </div>
+
+                    <div class="price-group">
+                        <div class="form-group">
+                            <label class="form-label" for="new-box-priceInput">
+                                <i class="bi bi-currency-dollar"></i> السعر (عادي)
+                            </label>
+                            <input type="number" id="new-box-priceInput" class="form-control" step="0.01" placeholder="0.00">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="new-box-boxPriceInput">
+                                <i class="bi bi-currency-dollar"></i> السعر (بوكس)
+                            </label>
+                            <input type="number" id="new-box-boxPriceInput" class="form-control" step="0.01" placeholder="0.00">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="new-box-discountInput">
+                                <i class="bi bi-percent"></i> نسبة الخصم
+                            </label>
+                            <input type="number" id="new-box-discountInput" class="form-control" value="0" step="0.1" min="0" max="100">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="new-box-totalPriceInput">
+                                <i class="bi bi-calculator"></i> السعر الإجمالي
+                            </label>
+                            <input type="number" id="new-box-totalPriceInput" class="form-control" step="0.01" readonly>
+                        </div>
+                    </div>
+
+                    <div class="image-upload-container" onclick="document.getElementById('new-box-productImages').click()">
+                        <input type="file" id="new-box-productImages" multiple accept="image/*" style="display: none;">
+                        <div class="upload-label">
+                            <i class="bi bi-cloud-arrow-up"></i>
+                            <span>صور المنتج (بحد أقصى 8 صور)</span>
+                            <small style="color: #8a9a8a; font-size: 12px;">انقر لرفع الصور</small>
+                        </div>
+                        <div id="new-box-imagePreviewContainer"></div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label class="form-label" for="new-box-sentenceInput">
+                            <i class="bi bi-chat-text"></i> جمل بطاقة المنتج
+                        </label>
+                        <div class="input-with-btn">
+                            <input type="text" id="new-box-sentenceInput" class="form-control" placeholder="أدخل جملة لعرضها أسفل السعر">
+                            <button type="button" id="new-box-addSentenceBtn" class="add-small-btn">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </div>
+                        <div id="new-box-sentencePreviewContainer" class="tags-container"></div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label class="form-label" for="new-box-hintInput">
+                            <i class="bi bi-search"></i> تلميحات البحث
+                        </label>
+                        <div class="input-with-btn">
+                            <input type="text" id="new-box-hintInput" class="form-control" placeholder="أدخل تلميحاً لتسهيل البحث عن المنتج">
+                            <button type="button" id="new-box-addHintBtn" class="add-small-btn">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </div>
+                        <div id="new-box-hintPreviewContainer" class="tags-container"></div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">
+                            <i class="bi bi-check-circle"></i> حفظ المنتج
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- <footer>
+        <p>جميع الحقوق محفوظة &copy; 2024 Arbeto Dashboard</p>
+    </footer> -->
+
+    <script src="../js/products.js"></script>
+    <!-- Mobile Menu Includes -->
+    <button class="menu-toggle" onclick="toggleSidebar()"><i class="bi bi-list"></i></button>
+    <div class="sidebar-overlay"></div>
+    <script src="../js/mobile-menu.js"></script>
+</body>
+</html>

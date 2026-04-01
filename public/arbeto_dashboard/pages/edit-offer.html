@@ -1,0 +1,135 @@
+
+
+    <div class="dashboard-container">
+      <div class="offer-page">
+        <h2 class="section-title">تعديل العرض</h2>
+        <div class="offer-form">
+          <div class="form-group">
+            <label>صورة العرض</label>
+            <div class="image-upload-area" id="offerImageArea">
+              <input
+                type="file"
+                id="offerImageInput"
+                accept="image/*"
+                style="display: none"
+              />
+              <div
+                class="upload-placeholder"
+                onclick="document.getElementById('offerImageInput').click()"
+                style="display: none"
+              >
+                <span class="bi bi-image"></span>
+                <p>اضغط لرفع صورة العرض</p>
+              </div>
+              <img id="offerImagePreview" class="image-preview" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>عنوان العرض</label>
+            <input
+              type="text"
+              id="offerTitle"
+              class="form-input"
+              placeholder="أدخل عنوان العرض"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>رابط الصفحة</label>
+            <div class="url-builder">
+              <span class="url-prefix">arbeto.net/</span>
+              <input
+                type="text"
+                id="offerUrlPath"
+                class="url-input"
+                placeholder="اكتب رابط الصفحة"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>مواقع العرض</label>
+            <div class="checkbox-group">
+              <label class="checkbox-item">
+                <input type="checkbox" id="navBar" value="navbar" />
+                <span class="checkbox-label">ناف بار</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" id="topBar" value="topbar" />
+                <span class="checkbox-label">توب بار</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" id="footer" value="footer" />
+                <span class="checkbox-label">الفوتر</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" id="mainAd" value="mainad" />
+                <span class="checkbox-label">إعلان في الصفحة الرئيسية</span>
+              </label>
+            </div>
+          </div>
+
+          <button class="btn-add-products" id="openProductModalBtn">
+            <span class="bi bi-bag-plus"></span>
+            إضافة منتجات إلى العرض
+          </button>
+
+          <div class="selected-products" id="selectedProducts">
+            <!-- Selected products will appear here -->
+          </div>
+
+          <button class="btn-submit-offer" id="updateOfferBtn">
+            <span class="bi bi-arrow-repeat"></span>
+            تحديث العرض
+          </button>
+
+          <button class="btn-delete-offer" id="deleteOfferBtn">
+            <span class="bi bi-trash"></span>
+            حذف العرض
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Selection Modal -->
+    <div class="modal-overlay" id="productModal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h3>إضافة منتجات إلى العرض</h3>
+          <button class="btn-close-modal" id="closeModalBtn">
+            <span class="bi bi-x-lg"></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="search-container">
+            <span class="bi bi-search search-icon"></span>
+            <input
+              type="text"
+              id="productSearch"
+              class="search-input"
+              placeholder="ابحث عن المنتجات..."
+            />
+          </div>
+          <div class="products-grid" id="productsGrid">
+            <!-- Products will be loaded here dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toastNotification">
+      <span class="bi bi-check-circle-fill toast-icon"></span>
+      <span class="toast-message" id="toastMessage">تمت العملية بنجاح</span>
+    </div>
+
+    <script src="../js/edit-offer.js"></script>
+    <!-- Mobile Menu Includes -->
+    <button class="menu-toggle" onclick="toggleSidebar()">
+      <i class="bi bi-list"></i>
+    </button>
+    <div class="sidebar-overlay"></div>
+    <script src="../js/mobile-menu.js"></script>
+  </body>
+</html>

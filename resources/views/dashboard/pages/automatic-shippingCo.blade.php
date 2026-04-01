@@ -1,0 +1,120 @@
+@include('dashboard.include.head')
+<link rel="stylesheet" href="{{asset('arbeto_dashboard/css/arexpress.css')}}">
+<link rel="stylesheet" href="{{asset('arbeto_dashboard/css/orders-controls.css')}}">
+
+</head>
+
+<body>
+    @include('dashboard.include.sidebar')
+
+    <div class="dashboard-container">
+        <div class="page-header">
+            <h1><i class="bi bi-truck"></i> البريد المصري</h1>
+            <p>إدارة طلبات الشحن عبر البريد المصري</p>
+        </div>
+
+        <!-- Statistics Section -->
+        <div class="statistics-section">
+             <div class="stat-card profit">
+                <div class="stat-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                <div class="stat-content">
+                    <div class="stat-label">صافي المبلغ المكتسب</div>
+                    <div class="stat-value" id="netProfit">0 جنيه</div>
+                </div>
+            </div>
+
+             <div class="stat-card">
+                <div class="stat-icon"><i class="bi bi-currency-dollar"></i></div>
+                <div class="stat-content">
+                    <div class="stat-label">إجمالي مبالغ الشحن</div>
+                    <div class="stat-value" id="totalShipping">0 جنيه</div>
+                </div>
+            </div>
+
+             <div class="stat-card">
+                <div class="stat-icon"><i class="bi bi-cash-coin"></i></div>
+                <div class="stat-content">
+                    <div class="stat-label">إجمالي مبالغ الشحنات</div>
+                    <div class="stat-value" id="totalPaid">0 جنيه</div>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon"><i class="bi bi-box-seam"></i></div>
+
+                <div class="stat-content">
+                    <div class="stat-label">عدد الطلبات المستلمة</div>
+                    <div class="stat-value" id="totalOrders">0</div>
+                </div>
+            </div>
+           
+        </div>
+
+        <!-- Orders Section -->
+        <div class="orders-section">
+            <div class="orders-header">
+                <h2 class="section-title">الطلبات المشحونة</h2>
+                <div class="orders-controls">
+                    <div class="search-box">
+                        <i class="bi bi-search"></i>
+                        <input type="text" id="searchInput" placeholder="بحث برقم الطلب..." oninput="searchOrders(this.value)">
+                    </div>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" onclick="filterOrders('ongoing')">جاري</button>
+                        <button class="filter-btn" onclick="filterOrders('delivered')">تم التوصيل</button>
+                    </div>
+                </div>
+            </div>
+            <div id="ordersContainer" class="orders-list">
+                <!-- Orders will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Reset Cost Modal -->
+    <div class="modal-overlay" id="resetModal">
+        <div class="modal-container small-modal">
+            <div class="modal-header">
+                <h3>إعادة تعيين مبلغ الشحن</h3>
+                <button class="btn-close-modal" onclick="closeResetModal()">
+                    <span class="bi bi-x-lg"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-question">هل أنت متأكد من إعادة إدخال مبالغ الشحن من البداية؟</p>
+                <div class="modal-actions">
+                    <button class="btn-modal-confirm" onclick="confirmReset()">موافق</button>
+                    <button class="btn-modal-cancel" onclick="closeResetModal()">إلغاء</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delivery Confirmation Modal -->
+    <div class="modal-overlay" id="deliveryModal">
+        <div class="modal-container small-modal">
+            <div class="modal-header">
+                <h3>تأكيد التوصيل</h3>
+                <button class="btn-close-modal" onclick="closeDeliveryModal()">
+                    <span class="bi bi-x-lg"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-question">هل تم توصيل الشحنة بنجاح؟</p>
+                <div class="modal-actions">
+                    <button class="btn-modal-confirm" id="confirmDeliveryBtn" onclick="confirmDelivery()">
+                        <span class="btn-text">موافق</span>
+                        <span class="btn-loader" style="display: none;">
+                            <i class="bi bi-arrow-repeat rotating"></i>
+                        </span>
+                    </button>
+                    <button class="btn-modal-cancel" onclick="closeDeliveryModal()">إلغاء</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @include('dashboard.include.toast')
+    <script src="{{asset('arbeto_dashboard/js/egypt-post.js')}}"></script>
+    @include('dashboard.include.footer')

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arbeto</title>
+    <link rel="icon" type="image/x-icon" href="../images\favicoon.png" />
+
+    <!-- ملف الاستايل الاساسي -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <!-- مكتية الشعارات bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="register-container">
+        <h2>تسجيل الدخول</h2>
+        <form action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">رقم الهاتف / البريد الإلكتروني</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="password">كلمة المرور</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+          </div>
+          <a href="sign-up.html" class="login-link">ليس لديك حساب؟ سجل الآن </a>
+
+          <button onclick="document.location.href='/'" type="submit" class="register-btn">دخول</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
